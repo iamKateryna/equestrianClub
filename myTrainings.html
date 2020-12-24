@@ -1,0 +1,157 @@
+<head>
+    <title> My trainings Katya good girl</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="datetimepicker-master/build/jquery.datetimepicker.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #334617;" >
+        <div class="container-xl">
+            <a class="navbar-brand" href="#"> <img width="40" src="img/horse.svg" alt="facebook"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Our horses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Prices</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">My trainings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<div class="container-xxl">
+    <figure class="text-end">
+        <blockquote class="blockquote">
+        </blockquote>
+    </figure>
+    <figure class="text-end">
+        <blockquote class="blockquote">
+            <p>No hour of life is wasted that is spent in the saddle.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            <cite title="Source Title">Winston Churchill</cite>
+        </figcaption>
+    </figure>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form class="row g-3">
+                    <div class="col-12">
+                        <label for="inputCoach" class="form-label">Choose a coach</label>
+                        <select id="inputCoach" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>coach 1</option>
+                            <option>coach 2</option>
+                            <option>coach 3</option>
+                            <option>coach 4</option>
+                            <option>coach 5</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputHorse" class="form-label">Choose a horse</label>
+                        <select id="inputHorse" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>horse 1</option>
+                            <option>horse 2</option>
+                            <option>horse 3</option>
+                            <option>horse 4</option>
+                            <option>horse 5</option>
+                            <option>horse 6</option>
+                            <option>horse 7</option>
+                            <option>horse 8</option>
+                            <option>horse 9</option>
+                            <option>horse 10</option>
+                            <option>horse 11</option>
+                        </select>
+                    </div>
+                    <div class="col-12" style="width: 400px">
+                        <label  class="form-label">Choose your training date and time </label>
+                        <input type="text" id="picker" class="form-control">
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-outline-secondary">Add training</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <div class="row justify-content-center">
+                    <img class="w-75" src="img/coop2.jpg" alt="horse">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="datetimepicker-master/build/jquery.datetimepicker.full.min.js"></script>
+    <script>
+        $('#picker').datetimepicker({
+            timepicker: true,
+            datepicker: true,
+            value: '25-12-2020'
+        })
+    </script>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Coach</th>
+            <th scope="col">Horse</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>2020/12/20 19:39</th>
+            <td>Mark</td>
+            <td>Otto</td>
+        </tr>
+        <tr>
+            <th>2020/12/21 19:39</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+        </tr>
+        <tr>
+            <th>2020/12/23 19:39</th>
+            <td>Larry the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        <tr>
+            <th>2020/12/23 19:39</th>
+            <td>Larry the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        <tr>
+            <th>2020/12/23 19:39</th>
+            <td>Larry the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        <tr>
+            <th>2020/12/23 19:39</th>
+            <td>Larry the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
